@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+#logo {
+    display: block;
+    margin: 3rem auto 3rem auto;
+}
+
+section {
+    background-color: white;
+    border-radius: 30px;
+    padding: 1.5rem;
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.label {
+    color: hsl(186, 14%, 43%);
+}
+
+input[type="number"] {
+    border-style: none;
+    padding: 3px;
+    width: 100%;
+    height: 2rem;
+    font: bold normal normal 26px 'Space Mono';
+    color: hsl(183, 100%, 15%);
+    text-align: right
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+#billInp {
+    background: url(../images/icon-dollar.svg) no-repeat scroll 7px;
+}
+
+#people {
+    background: url(../images/icon-person.svg) no-repeat scroll 7px;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+/* Tips */
+.tip {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.tip-list {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+}
+
+.tip-list:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.custom-tip-list {
+    display: flex;
+    background-color: white;
+    color: hsl(186, 14%, 43%);
+}
+
+#custom-tip {
+    font: bold normal normal 24px 'Space Mono';
+    color: hsl(186, 14%, 43%);
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+/* Summary*/
+.right-side {
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 2.5rem;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+right-side-label {
+    color: white;
+}
+
+table {
+    width: 100%;
+    height: 1fr;
+}
+
+th {
+    text-align: left;
+    color: white;
+}
+
+td {
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+}
+
+span {
+    color: hsl(186, 14%, 43%);
+}
+
+#btn {
+    margin-top: 15%;
+}
+
+.reset-btn {
+    margin-top: 1rem;
+    background-color: hsl(172, 67%, 45%);
+    border-style: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    color: hsl(183, 100%, 15%);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.reset-btn:focus {
+    background-color: hsl(186, 14%, 43%);
+}
+
+@media screen and (min-width: 800px) {
+
+    section {
+        background-color: white;
+        border-radius: 30px;
+        height: 55vh;
+        width: 80vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 2rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.5rem;
+        overflow: hidden;
+
+    }
+
+    .left-side {
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .label {
+        margin-top: 0;
+    }
+
+    .tip {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .right-side {
+        margin: 0;
+        border-radius: 15px;
+        padding: 1rem;
+        position: relative;
+    }
+
+    td {
+        font-size: 48px;
+    }
+
+    #btn {
+        position: absolute;
+        bottom: 0;
+    }
+}
